@@ -1,19 +1,19 @@
-##1. Node.js 설치 
+## 1. Node.js 설치 
 sudo apt remove nodejs npm
 sudo apt update
 sudo apt install curl -y
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
 
-##2. 설치 확인
+## 2. 설치 확인
 node -v
 npm -v
 
-##3. 환경변수 설정
+## 3. 환경변수 설정
 echo 'export NODE_OPTIONS=--openssl-legacy-provider' >> ~/.bashrc
 source ~/.bashrc
 
-##4. React project 실행
+## 4. React project 실행
 cd ./099_django/
 npm install
 npm start
