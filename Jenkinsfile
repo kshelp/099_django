@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('git scm update') {
       steps {
-        git url: 'https://github.com/kshelp/099_django', branch: 'master'
+        // git url: 'https://github.com/kshelp/099_django', branch: 'master'
+        git url: 'https://github.com/kshelp/099_django', branch: "${params.BRANCH}"
       }
     }
     stage('docker build and push') {
