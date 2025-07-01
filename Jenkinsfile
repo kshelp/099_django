@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  parameters {
+    string(name: 'BRANCH', defaultValue: 'main', description: 'Git branch to build')
+  } 
   stages {
     stage('git scm update') {
       steps {
