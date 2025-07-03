@@ -1,3 +1,2 @@
 # .argocd-source-ignore
 package-lock.json
-*.json
