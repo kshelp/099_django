@@ -21,6 +21,7 @@ pipeline {
     stage('deploy kubernetes') {
       steps {
         sh '''
+        kubectl delete -f react-deploy.yaml
         kubectl apply -f react-deploy.yaml
         kubectl apply -f react-svc.yaml
         '''
